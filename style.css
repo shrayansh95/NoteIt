@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff7b54;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin-top: 2%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Add new Button */
+
+#new-note {
+    background-color: #ffb26b;
+    display: block;
+    width: 11rem;
+    margin: 2% auto;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1.5rem;
+    padding: 1%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-weight: 1000;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+#new-note:hover {
+    background-color: #e69d5a;
+    border: 2px solid #775433;
+}
+
+#new-note:active {
+    background-color: #df4516;
+}
+
+/* End of Add Button */
+
+/* The container which is going to contain all my notes div */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.notes {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: 5px 1px 10px 5px rgba(0, 0, 0, 0.342);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.notes .tool {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e69d5a;
+    padding: .5rem;
+}
+
+.delete {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.delete:hover, :active {
+    background-color: #ff7b54;
+}
+
+.notes textarea {
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    height: 380px;
+    width: 100%;
+    resize: none;
+    padding: 10px;
+}
